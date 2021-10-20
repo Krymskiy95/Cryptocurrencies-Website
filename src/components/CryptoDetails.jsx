@@ -43,8 +43,6 @@ const CryptoDetails = () => {
         { title: 'Circulating Supply', value: `$ ${cryptoDetails?.circulatingSupply && millify(cryptoDetails.circulatingSupply)}`, icon: <ExclamationCircleOutlined /> },
     ];
 
-    // console.log(cryptoDetails?.description)
-
 
     return (
         <Col className="coin-detail-container">
@@ -109,7 +107,7 @@ const CryptoDetails = () => {
              <Col className="coin-desc-link">
                  <Row className="coin-desc">
                      <Title level={3} className="coin-details-heading">What is {cryptoDetails?.name}</Title>
-                     {/*{HTMLReactParser(cryptoDetails?.description)}*/}
+                     {HTMLReactParser(cryptoDetails?.description)}
                  </Row>
                  <Col className="coin-links">
                     <Title level={3} className="coin-details-heading">
